@@ -467,7 +467,6 @@ types:
         application/json:
           description: order placed for purchasing the pet
           type: Order
-          required: false
           (oas-body-name): body
       (oas-summary): Place an order for a pet
       (oas-tags):
@@ -531,7 +530,6 @@ types:
           type: array
           items:
             type: User
-          required: false
           (oas-body-name): body
       (oas-summary): Creates list of users with given input array
       (oas-tags):
@@ -547,7 +545,6 @@ types:
           type: array
           items:
             type: User
-          required: false
           (oas-body-name): body
       (oas-summary): Creates list of users with given input array
       (oas-tags):
@@ -623,7 +620,6 @@ types:
         application/json:
           description: Updated user object
           type: User
-          required: false
           (oas-body-name): body
       (oas-summary): Updated user
       (oas-tags):

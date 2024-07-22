@@ -217,12 +217,10 @@ types:
       application/json:
         description: Pet object that needs to be added to the store
         type: Pet
-        required: false
         (oas-body-name): body
       application/xml:
         description: Pet object that needs to be added to the store
         type: Pet
-        required: false
         (oas-body-name): body
     securedBy:
       - petstore_auth:
@@ -281,14 +279,13 @@ types:
         status:
           description: Status values that need to be considered for filter
           required: false
-          default: available
           type: array
           items:
             type: string
-          enum:
-            - available
-            - pending
-            - sold
+            enum:
+              - available
+              - pending
+              - sold
           (oas-collectionFormat): multi
       securedBy:
         - petstore_auth:
@@ -519,7 +516,6 @@ types:
       application/json:
         description: Created user object
         type: User
-        required: false
         (oas-body-name): body
     (oas-summary): Create user
     (oas-tags):
